@@ -1,0 +1,12 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
