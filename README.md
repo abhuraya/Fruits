@@ -7,6 +7,7 @@ The project was built with HTML, CSS, and vanilla JavaScript. It includes a colo
 ## Live Demo
 
 Add your deployed Netlify link here.
+[Open the live Fruit Picker]https://pickyfruits.netlify.app/
 
 ## Features
 
