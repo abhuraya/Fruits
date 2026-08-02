@@ -1,8 +1,63 @@
-# React + Vite
+# Random Fruit Picker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight and playful web app that displays a random fruit whenever the user presses a button.
 
-Currently, two official plugins are available:
+The project was built with HTML, CSS, and vanilla JavaScript. It includes a colorful responsive interface, fruit emojis, keyboard controls, animation, and protection against showing the same fruit twice in a row.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+
+Add your deployed Netlify link here.
+
+## Features
+
+* Randomly selects from a large collection of fruits
+* Displays the fruit name and a matching emoji
+* Prevents immediate repeats
+* Animated fruit transitions
+* Enter and Space keyboard controls
+* Responsive mobile layout
+* No external libraries or frameworks
+
+## Keyboard Controls
+
+| Key     | Action           |
+| ------- | ---------------- |
+| `Enter` | Pick a new fruit |
+| `Space` | Pick a new fruit |
+
+## Technologies
+
+* HTML5
+* CSS3
+* JavaScript
+
+## How It Works
+
+The app stores fruit names and emojis inside an array of objects.
+
+Each time the button is pressed, JavaScript generates a random array index and displays the corresponding fruit. The previously selected index is stored so that the same fruit is not shown twice in succession.
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/abhuraya/Fruits.git
+```
+
+Open the project folder:
+
+```bash
+cd Fruits
+```
+
+Then open `index.html` in your browser.
+
+## Future Improvements
+
+* Replace approximate emojis with real fruit images
+* Add fruit facts or nutritional information
+* Add fruit categories
+* Add a favorites feature
+* Add sound effects
+* Add light and dark themes

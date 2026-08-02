@@ -1,26 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="./style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Fruits</title>
-  </head>
-  <body class="body">
-    <div class="box">
-      <button type="button" class="btn btn-secondary">Click me</button>
-      <br>
-      <br>
-      <h3 id="display"></h3>
-    </div>
-    <script>
-      let fruits = ['Apple', 'Apricot', 'Banana', 'Blackberry', 'Blueberry', 'Boysenberry', 'Canary Melon', 'Cantaloupe', 'Casaba Melon', 'Cherimoya', 'Cherry', 'Christmas Melon', 'Clementine', 'Coconut', 'Cranberry', 'Crenshaw Melon', 'Cucumber', 'Currant', 'Date', 'Dragonfruit', 'Durian', 'Elderberry', 'Feijoa', 'Fig', 'Goji Berry', 'Gooseberry', 'Grape', 'Grapefruit', 'Guava', 'Honeydew', 'Horned Melon', 'Huckleberry', 'Jackfruit', 'Jujube', 'Kiwi', 'Kumquat', 'Lemon', 'Lime', 'Loganberry', 'Lychee', 'Mandarin Orange', 'Mango', 'Minneola', 'Mulberry', 'Musk Melon', 'Nance', 'Nectarine', 'Blood Orange', 'Orange', 'Papaya', 'Passion Fruit', 'Peach', 'Pear', 'Persimmon', 'Pineapple', 'Plum', 'Pomegranate', 'Prickly (cactus) pear', 'Pomelo', 'Pulasan', 'Rambutan', 'Raspberry', 'Red Currant', 'Satsuma', 'Soutsop', 'Star Fruit', 'Strawberry', 'Tamarillo', 'Tangelo', 'Tangerine', 'Ugli fruit', 'Watermelon', 'White currant', 'White sapote', 'Yuzu', 'Ziziphus'];
+    <head>
+        <meta charset="UTF-8" />
 
-document.querySelector('button').addEventListener('click', function() {
-    let randomIndex = Math.floor(Math.random() * fruits.length);
-    document.querySelector('#display').textContent = fruits[randomIndex];
-});
-    </script>
-  </body>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+
+        <meta
+            name="description"
+            content="A playful random fruit picker."
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Fruit Picker</title>
+    </head>
+
+    <body>
+        <main class="page">
+            <section class="fruit-card">
+                <p class="eyebrow">Feeling fruity?</p>
+
+                <h1>Pick a random fruit</h1>
+
+                <p class="description">
+                    Press the button and let chance choose your next
+                    fruity favorite.
+                </p>
+
+                <div
+                    class="fruit-display"
+                    id="fruit-display"
+                    aria-live="polite"
+                >
+                    <span
+                        class="fruit-emoji"
+                        id="fruit-emoji"
+                        aria-hidden="true"
+                    >
+                        🍓
+                    </span>
+
+                    <p class="fruit-name" id="fruit-name">
+                        Ready when you are
+                    </p>
+                </div>
+
+                <button
+                    class="fruit-button"
+                    id="fruit-button"
+                    type="button"
+                >
+                    Pick a fruit
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <p class="keyboard-hint">
+                    You can also press Enter or Space.
+                </p>
+            </section>
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
 </html>
